@@ -1,1 +1,21 @@
-ceshi
+data:
+  batch_size: 10
+  data_length: false
+  data_type: train
+  han_vocab_file: save_models/11-03-01-49-09-logs/config/han_vocab.txt
+  pny_vocab_file: save_models/11-03-01-49-09-logs/config/config/pny_vocab.txt
+  text_path: data/data_lm/text_lm.txt
+model:
+  dropout_rate: 0.2
+  hidden_units: 512
+  input_vocab_size: 1287
+  is_training: true
+  label_vocab_size: 6479
+  lr: 0.0001
+  max_length: 100
+  num_blocks: 6
+  num_heads: 8
+train:
+  epochs: 50
+  retrain_dir: false
+  save_path: save_models/11-03-01-49-09-logs
